@@ -43,9 +43,9 @@ function showMovies(movie) {
 }
 
 function getVoteColor(vote_average) {
-  if (vote_average < 5) {
+  if (vote_average > 0 && vote_average <= 5.9) {
     return "red";
-  } else if (vote_average >= 6 && vote_average <= 7) {
+  } else if (vote_average >= 6 && vote_average <= 6.9) {
     return "orange";
   } else {
     return "green";
